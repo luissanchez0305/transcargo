@@ -1,0 +1,17 @@
+x Si se indica el botón de contenedor liquidado, no se puede indicar que es descarga inmediata.
+Recomiendo cambiar el orden: 
+Casilla 1: Liquidado o Transfer
+Casilla 2: Soltar o Descarga Inmediata
+Casilla 3: Mov. Adicional o Rampa
+x Cuando se asigna la actividad en el campo de asignación del chofer (por ejemplo: En el puerto), esta debe cambiar el status a "En Ejecución" una vez guardado.
+* Para movimientos contenedores "shipper own" (usualmente son one-way) no se puede des-habilitar el movimiento vacío.
+x Cuando el evento es "completado", debe cambiar a color verde.
+x Cuando está en "ejecución" debe cambiar a color amarillo.
+* Si por alguna razón salvo el mismo evento 2 veces, solo cambiando el status de abierto a en ejecución, el sistema crea eventos distintos como si fuesen contenedores distintos. Se necesita verificar que una alarma se genere cuando se está incluyendo un movimiento a un mismo contenedor con los mismos parámetros que el anterior.
+* El movimiento que termina en X (devolución del contenedor) debe incluir el movimiento a la inversa del A por default.
+x El movimiento X debe detallarse como vacío en forma automática en caso de ser un liquidado o transfer.
+x Lo primero que debe aparecer en la pantalla son los movimientos que están programados para el día en que estoy. Ejem: Si hoy es 10 de agosto, lo primero que debe aparecerme son lo eventos programados para ese día.
+x Otra opción es que exista la posibilidad de filtrarlos por fecha.
+* Los movimientos a puerta, que se realizan en la misma bodega; el sistema impide poder regitrarlo.
+- El sistema registra en su historial, la hora en que se creó o modificó el evento, pero no tiene una casilla para registrar la hora de llegada por ejemplo a la bodega del cliente
+x Necesario corregir las palabras que aparecen poco legibles debido a que el sistema no reconoce o no reconocía los acentos.
